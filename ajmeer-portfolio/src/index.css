@@ -1,0 +1,34 @@
+/* Phase 13 Design Tokens */
+:root {
+  --bg-primary:    #FAFAF5;
+  --bg-surface:    #F5F5EE;
+  --bg-card:       #FFFFFF;
+  --text-primary:  #1C1C1E;
+  --text-secondary:#6B6B6B;
+  --accent-primary:#B8963E;
+  --accent-hover:  #9A7B2E;
+  --border-subtle: rgba(28,28,30,0.1);
+  --shadow-card:   0 4px 24px -6px rgba(184,150,62,0.15), 0 2px 8px rgba(0,0,0,0.06);
+  --radius-md:     4px;
+  --radius-sm:     2px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Palatino Linotype", Palatino, serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
